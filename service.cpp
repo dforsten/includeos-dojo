@@ -130,4 +130,9 @@ void Service::start()
 
   // Start a new round every 10 seconds
   // TBD...
+  // For example:
+  // Timers::periodic(5s, 10s,
+  //   [&inet] (uint32_t) {
+  //     broadcast_round_end();
+  //   });    
 }
