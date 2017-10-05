@@ -58,7 +58,7 @@ The "move" member can be "INVALID_MOVE", for example if there are no legal moves
 "team" can be either BLACK or WHITE  (look at GameSettings.h for relevant defines),
 
 {
-    type: 'move confirmed',
+    type: 'round ended',
     move, // Int
     team, // Int    
 };
@@ -71,6 +71,6 @@ Contains the current state of the game board, as an 1-dimensional array of integ
 starting from the top-left corner.
 
 {
-    type: 'move confirmed',
+    type: 'initial state',
     board, // Array of Int
 };
