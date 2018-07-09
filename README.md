@@ -1,5 +1,7 @@
 # C++ User Group IncludeOS Dojo
 
+Sample code for the Graz Qt/C++ MeetUp Dojo https://www.meetup.com/de-DE/Graz-Qt-C-11-Meetup/events/240890363/
+
 This service demonstrates websocket, and utilizes memdisk, autoconf and http server.
 
 For IncludeOS setup, please look at
