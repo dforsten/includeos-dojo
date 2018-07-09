@@ -18,9 +18,9 @@ followed by an arbitrary payload of data.
     ....
 }
 
-##Following events are sent by the client:
+## Following events are sent by the client:
 
-###"submit move"
+### "submit move"
 
 Sends a single integer "move" to indicate the move the player placed,
 as index starting from the left-top corner. [0, 80] on a 9x9 board.
@@ -32,7 +32,7 @@ Expects a 'move confirmed' event as reply from the server.
 };
 
 
-###'request initial state'
+### 'request initial state'
 
 Expects a 'initial state' event as reply.
 
@@ -41,9 +41,9 @@ Expects a 'initial state' event as reply.
 };
 
 
-##Following events are processed by the client:
+## Following events are processed by the client:
 
-###'move confirmed'
+### 'move confirmed'
 
 Should be sent in reply to "submit move"
 The "move" member can be "INVALID_MOVE" (look at GameSettings.h for relevant defines),
@@ -55,7 +55,7 @@ or is the index of the confirmed move otherwise.
 };
 
 
-###'round ended'
+### 'round ended'
 
 The "move" member can be "INVALID_MOVE", for example if there are no legal moves available on the board.
 "team" can be either BLACK or WHITE  (look at GameSettings.h for relevant defines),
@@ -67,7 +67,7 @@ The "move" member can be "INVALID_MOVE", for example if there are no legal moves
 };
 
 
-###'initial state'
+### 'initial state'
 
 Should be sent in reply to 'request initial state'
 Contains the current state of the game board, as an 1-dimensional array of integers representing all fields 
